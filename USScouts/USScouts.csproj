@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA0AAABC-8EDA-401B-938B-03166A1E969E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USScouts</RootNamespace>
+    <AssemblyName>USScouts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PX.Common">
+      <HintPath>..\Summit_18_206_0011\Bin\PX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data">
+      <HintPath>..\Summit_18_206_0011\Bin\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.DbServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e" />
+    <Reference Include="PX.Objects">
+      <HintPath>..\Summit_18_206_0011\Bin\PX.Objects.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Web.Customization">
+      <HintPath>..\Summit_18_206_0011\Bin\PX.Web.Customization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\USMessages.cs" />
+    <Compile Include="Control\USScoutTranAttribute.cs" />
+    <Compile Include="Control\USSimpleInvoiceStatus.cs" />
+    <Compile Include="CustomizationPlugin\SomeOtherPlugin.cs" />
+    <Compile Include="CustomizationPlugin\SomePlugin.cs" />
+    <Compile Include="CustomizationPlugin\USCustomizationPlugin.cs" />
+    <Compile Include="DAC\USScout.cs" />
+    <Compile Include="DAC\USSetup.cs" />
+    <Compile Include="DAC\USSimpleInvoice.cs" />
+    <Compile Include="DAC\USSimpleInvoiceLine.cs" />
+    <Compile Include="Extensions\DAC\APTranExtension.cs" />
+    <Compile Include="Extensions\Graph\APInvoiceEntryExtension.cs" />
+    <Compile Include="Graph\USScoutMaint.cs" />
+    <Compile Include="Graph\USSetupMaint.cs" />
+    <Compile Include="Graph\USSimpleInvoiceEntry.cs" />
+    <Compile Include="Graph\USSimpleInvoiceRelease.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Control\USFeatureDefinition.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

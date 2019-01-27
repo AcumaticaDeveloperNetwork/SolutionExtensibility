@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<relations version="2" main-table="PMAllocation" file-name="AllocationRule-(AllocationID)">
+    <link to="PMAllocation (AllocationID)" from="PMAllocationStep (AllocationID)" />
+</relations>

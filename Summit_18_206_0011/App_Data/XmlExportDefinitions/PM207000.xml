@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<relations version="2" main-table="PMBilling" file-name="BillingRule-(BillingID)">
+    <link to="PMBilling (BillingID)" from="PMBillingRule (BillingID)" />
+</relations>

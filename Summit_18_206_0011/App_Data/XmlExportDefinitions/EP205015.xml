@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<relations version="2" main-table="EPAssignmentMap">
+<link from="EPRule (AssignmentMapID)" to="EPAssignmentMap (AssignmentMapID)" updateable="true" />
+<link from="EPRuleCondition (RuleID)" to="EPRule (RuleID)" />
+</relations>

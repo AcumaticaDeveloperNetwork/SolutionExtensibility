@@ -1,0 +1,9 @@
+<Rollback>
+  <File path="CstPublished\pages_ap\ap301000.aspx" method="Delete" />
+  <File path="CstPublished\pages_ap\ap301000.aspx.cs" method="Delete" />
+  <File path="Bin\USScouts.dll" method="Delete" />
+  <File path="Pages\US\US100000.aspx" method="Delete" />
+  <File path="Pages\US\US100000.aspx.cs" method="Delete" />
+  <File path="Pages\US\US303000.aspx" method="Delete" />
+  <File path="Pages\US\US303000.aspx.cs" method="Delete" />
+</Rollback>

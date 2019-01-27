@@ -1,0 +1,23 @@
+﻿using PX.Data;
+using PX.Objects.IN;
+using System;
+
+namespace PX.Objects.FS
+{
+    [Serializable]
+    [PXPrimaryGraph(typeof(ServiceOrderEntry))]
+    public class FSSODetEmployee : FSSODet
+    {
+        public new abstract class sOID : PX.Data.IBqlField
+        {
+        }
+
+        public new abstract class sODetID : PX.Data.IBqlField
+        {
+        }
+
+        public new abstract class lineRef : PX.Data.IBqlField
+        {
+        }
+    }
+}
